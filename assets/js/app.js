@@ -32,7 +32,8 @@ for(var i=0; i < response.data.length; i++){
           var imgURL = response.data[i].images.original_still.url;
 
           // Creating an element to hold the image
-         var image = $("<img>").attr("src", imgURL);
+         var image = $("<img  class = 'gif'>").attr("src", imgURL);
+
 
           // Appending the image
           movieDiv.append(image);
@@ -41,10 +42,21 @@ for(var i=0; i < response.data.length; i++){
           $("#movies-view").append(movieDiv);
 
         }
+
+        
 });
 }
 
+function gif(){
 
+   var src = $(this).attr("src");
+      $(this).attr("src", src.replace(/giphy_s/gi, "giphy-preview"));
+       }
+function gifs(){
+
+   var src = $(this).attr("src");
+      $(this).attr("src", src.replace(/giphy-preview/gi, "giphy_s"));
+       }
 
        function renderButtons() {
 
@@ -83,4 +95,6 @@ for(var i=0; i < response.data.length; i++){
 
       // Adding a click event listener to all elements with a class of "movie"
       $(document).on("click", ".topics", displayMovieInfo);
+      $(document).on("click", ".gif", gif);
+      $(document).on("dblclick", ".gif", gifs);
        renderButtons();
