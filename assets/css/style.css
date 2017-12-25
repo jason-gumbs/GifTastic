@@ -25,6 +25,7 @@ body {
       font-family: 'Poiret One', cursive;
       margin: 10px;
       font-size: 20px;
+      font-weight: bolder;
 
  }
  #movies-view{
@@ -38,7 +39,7 @@ body {
     filter: alpha(opacity=50); 
     height: 400px;
      width: 1200px;
-     margin-left: 30px;
+     margin-left: 100px;
      margin-top:100px;
      overflow: auto;
      
