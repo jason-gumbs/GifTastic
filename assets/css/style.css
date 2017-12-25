@@ -1,0 +1,68 @@
+body {
+    background-image: url("../images/winter.jpg");
+   font-family: 'Poiret One', cursive;
+    color: white;
+    position: relative;
+    font-size: 40px;
+    font-weight: bolder;
+ }
+
+ #search{
+ 	background-color: grey;
+ 	width: 250px;
+ 	height: 200px;
+ 	 opacity: 0.9;
+    filter: alpha(opacity=50); 
+    float: right;
+ }
+ #movie-form{
+ 	margin-left: 20px;
+ 	margin-top: 10px;
+ }
+ #add-movie,.topics{
+ 	height: 50px;
+     width: 100px;
+      font-family: 'Poiret One', cursive;
+      margin: 10px;
+      font-size: 20px;
+
+ }
+ #movies-view{
+ float: left;
+
+ }
+ .movie{
+ 	font-size: 20px;
+ 	background-color: grey;
+ 	opacity: 0.9;
+    filter: alpha(opacity=50); 
+    height: 400px;
+     width: 1200px;
+     margin-left: 30px;
+     margin-top:100px;
+     overflow: auto;
+     
+   
+
+    
+
+ }
+ img{
+ 	margin-top: 30px;
+ 	margin-left: 5px;
+ 	display: block;
+max-width: 150px;
+max-height: 100px;
+ float: left;
+
+
+}
+
+p{
+
+	margin: 5px;
+	 float: left;
+	 margin-top: 15px;
+
+	
+}
